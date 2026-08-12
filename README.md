@@ -61,7 +61,7 @@ This board was designed as a four-channel MOSFET switching platform for applicat
 
 ## 📐 Schematic
 
-![4-Channel MOSFET Schematic](images/schematic.png)
+<img width="1276" height="856" alt="Screenshot 2026-08-12 185455" src="https://github.com/user-attachments/assets/f4bb3e27-16f6-4b99-a07f-b894e4939131" />
 
 **Schematic of the 4-channel MOSFET switching circuit.**
 
@@ -73,7 +73,8 @@ The design allows each load to be controlled independently from a digital contro
 
 ## 🖥️ PCB Design
 
-![PCB Layout](images/pcb-layout.png)
+<img width="907" height="790" alt="Screenshot 2026-08-12 185719" src="https://github.com/user-attachments/assets/a6471503-b1e8-4c19-b5dd-66175398f3ba" />
+<img width="924" height="795" alt="Screenshot 2026-08-12 185753" src="https://github.com/user-attachments/assets/82c1b45d-25d1-4f79-89b6-f78da39db1f6" />
 
 **PCB Layout**
 
