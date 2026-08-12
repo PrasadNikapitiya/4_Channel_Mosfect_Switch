@@ -264,17 +264,3 @@ Possible future improvements include:
 * Wi-Fi / Bluetooth control using ESP32
 
 ---
-
-## 👨‍💻 Project Purpose
-
-This project was developed as part of my **hardware engineering and PCB design portfolio**, focusing on practical circuit design, MOSFET switching, PCB layout, and embedded hardware development.
-
-It demonstrates my approach to taking a hardware concept from **schematic → PCB layout → 3D design → manufacturing → testing**.
-
----
-
-## 📜 License
-
-This project is provided for educational and portfolio purposes.
-
-Please check the component datasheets and perform appropriate electrical and thermal validation before using the design in a production application.
