@@ -8,8 +8,8 @@ This project focuses on practical PCB design, MOSFET switching, protection, powe
 
 ## 📸 Project Overview
 
-![4-Channel MOSFET Board 3D View](<img width="1005" height="792" alt="Screenshot 2026-08-12 181139" src="https://github.com/user-attachments/assets/dcd855b7-55ac-4ce6-9d14-8ba15bdc9aed" />
-)
+<img width="1005" height="792" alt="Screenshot 2026-08-12 181139" src="https://github.com/user-attachments/assets/36f14d53-ef26-475a-860e-300ce713e8d7" />
+
 
 
 
