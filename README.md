@@ -8,6 +8,86 @@ This project focuses on practical PCB design, MOSFET switching, protection, powe
 
 ## 📸 Project Overview
 
+## IRL540N MOSFET Specifications
+
+The 4-channel switching board uses **four IRL540N N-channel power MOSFETs** in a low-side switching configuration.
+
+### Key Electrical Specifications
+
+| Parameter                             |       Specification |
+| ------------------------------------- | ------------------: |
+| MOSFET Type                           |           N-Channel |
+| Part Number                           |             IRL540N |
+| Package                               |              TO-220 |
+| Maximum Drain-Source Voltage (VDS)    |           **100 V** |
+| Maximum Continuous Drain Current (ID) |     **36 A @ 25°C** |
+| Maximum Power Dissipation (Ptot)      |           **140 W** |
+| RDS(on) @ VGS = 10 V                  |       **44 mΩ max** |
+| RDS(on) @ VGS = 4.5 V                 |       **63 mΩ max** |
+| Gate Threshold Voltage (VGS(th))      |           **1–2 V** |
+| Maximum Gate-Source Voltage (VGS)     |           **±16 V** |
+| Maximum Junction Temperature          |           **175°C** |
+| Operating Temperature                 | **−55°C to +175°C** |
+| Package Type                          |          **TO-220** |
+| Logic-Level MOSFET                    |             **Yes** |
+
+### Maximum Voltage and Current
+
+The IRL540N has a maximum **Drain-to-Source voltage rating of 100 V** and a datasheet maximum drain current of **36 A at 25°C** under the manufacturer's specified conditions.
+
+However, the **36 A rating should not be interpreted as the guaranteed continuous current capability of the completed PCB**. Actual usable current depends on MOSFET temperature, PCB copper area, thermal resistance, heatsinking, switching conditions, and the load.
+
+### ON-State Resistance
+
+The maximum specified RDS(on) is:
+
+* **44 mΩ at VGS = 10 V**
+* **63 mΩ at VGS = 4.5 V**
+
+Lower RDS(on) results in lower conduction losses when the MOSFET is fully switched ON.
+
+For example, conduction loss can be estimated using:
+
+**P = I² × RDS(on)**
+
+Therefore, the MOSFET's power dissipation increases rapidly as load current increases.
+
+### Gate Drive
+
+The IRL540N is specified as a **logic-level MOSFET**, with RDS(on) specified at a gate-source voltage of 4.5 V.
+
+The gate threshold voltage of **1–2 V should not be considered the voltage required to fully turn the MOSFET ON**. It is a threshold specification measured under a very small drain current condition. For switching applications, the RDS(on) test conditions are more relevant.
+
+### Thermal Considerations
+
+Although the datasheet lists a maximum power dissipation of **140 W**, this value is dependent on the specified thermal conditions and should not be treated as a practical PCB operating target.
+
+For a real application, MOSFET temperature, PCB copper area, heatsink requirements and enclosure airflow should be evaluated before operating at high current.
+
+### 4-Channel Board
+
+The board contains four independent IRL540N switching channels:
+
+| Channel | MOSFET       | Function          |
+| ------- | ------------ | ----------------- |
+| CH1     | Q1 – IRL540N | DC Load Switching |
+| CH2     | Q2 – IRL540N | DC Load Switching |
+| CH3     | Q3 – IRL540N | DC Load Switching |
+| CH4     | Q4 – IRL540N | DC Load Switching |
+
+Each channel is independently controlled and can be used for switching suitable DC loads.
+
+> **Design note:** The MOSFET datasheet maximum ratings are component-level limits. The actual current rating of this PCB should be specified separately based on PCB trace width, copper thickness, connector rating, thermal performance and testing.
+
+### Manufacturer
+
+**Infineon Technologies — IRL540N**
+
+The IRL540N is specified by Infineon as a **100 V single N-channel power MOSFET in a TO-220 package**.
+
+data sheets Link - https://www.lcsc.com/datasheet/C111607.pdf?spm=wm.sxq.inf.ggs___wm.fly.bg.0.stp&lcsc_vid=EwRWX1UHFAdfUgJRElVaUFECE1hcAQVeFQBaVwZVT1AxVlNeQVRaVlFRRVJdUDsOAxUeFF5JWBYZEEoKFBINSQcJGk4%3D
+
+
 <img width="1005" height="792" alt="Screenshot 2026-08-12 181139" src="https://github.com/user-attachments/assets/36f14d53-ef26-475a-860e-300ce713e8d7" />
 
 
