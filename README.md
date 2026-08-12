@@ -90,15 +90,6 @@ The PCB layout was designed with attention to:
 
 ---
 
-## 🧊 3D PCB View
-
-![Front 3D View](images/3d-view.png)
-
-**Front-side 3D view of the completed PCB design.**
-
-![Back 3D View](images/3d-back-view.png)
-
-**Back-side 3D view.**
 
 ---
 
